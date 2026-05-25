@@ -139,16 +139,23 @@ Se configuró la política del bucket para permitir acceso público de lectura.
 
 ```json
 {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "PublicReadGetObject",
-      "Effect": "Allow",
-      "Principal": "*",
-      "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::static-site-demo-lab/*"
-    }
-  ]
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowCloudFrontServicePrincipal",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "cloudfront.amazonaws.com"
+            },
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::static-site-demo-lab/*",
+            "Condition": {
+                "ArnLike": {
+                    "AWS:SourceArn": "arn:aws:cloudfront::511974511687:distribution/EFQC3L39LX6CL"
+                }
+            }
+        }
+    ]
 }
 ```
 
@@ -186,6 +193,8 @@ Se configuraron los secretos y variables necesarios para el workflow.
 |---|---|
 | AWS_ACCESS_KEY_ID | Access Key de IAM |
 | AWS_SECRET_ACCESS_KEY | Secret Access Key de IAM |
+| CLOUDFRONT_DISTRIBUTION_ID | ID único de la distribución de CloudFront|
+
 
 ### Variables configuradas
 
@@ -237,6 +246,12 @@ jobs:
             --exclude ".github/*" \
             --exclude "README.md" \
             --exclude "INFORME.md"
+            
+      - name: Invalidar cache en CloudFront
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
+            --paths "/*"
 ```
 
 ### Evidencia
