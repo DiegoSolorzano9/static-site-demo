@@ -7,8 +7,8 @@
 - **Nombre:** SOLORZANO ARANCIBIA DIEGO SANTIAGO
 - **Materia:** TRABAJANDO EN LA NUBE
 - **Repositorio GitHub:** https://github.com/DiegoSolorzano9/static-site-demo.git
-- **URL pública del sitio:** ______________________________
-- **URL CloudFront:** ______________________________
+- **URL pública del sitio:** http://static-site-demo-lab.s3-website-us-east-1.amazonaws.com/
+- **URL CloudFront:** https://d2nhbah7256vea.cloudfront.net/
 
 ---
 
@@ -332,7 +332,7 @@ Se configuró la invalidación automática de caché en el workflow.
 
 ### Evidencia
 
-![Evidencia del laboratorio](./img/image1.png)
+![Evidencia del laboratorio](./img/image21.png)
 ---
 
 # 4. Resultados Obtenidos
@@ -378,23 +378,21 @@ Se configuró la invalidación automática de caché en el workflow.
 ## Repositorio GitHub
 
 ```text
-https://github.com/TU_USUARIO/TU_REPOSITORIO
+https://github.com/DiegoSolorzano9/static-site-demo.git
 ```
 
 ## URL pública S3
 
 ```text
-http://NOMBRE_DE_TU_BUCKET.s3-website-REGION.amazonaws.com
+http://static-site-demo-lab.s3-website-us-east-1.amazonaws.com/
 ```
 
 ## URL CloudFront
 
 ```text
-https://TU_DISTRIBUCION.cloudfront.net
+https://d2nhbah7256vea.cloudfront.net/
 ```
 
 ---
 
-# 9. Anexos
 
-Agregar capturas adicionales o información complementaria.
