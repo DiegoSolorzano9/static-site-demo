@@ -323,7 +323,7 @@ Se creó una distribución CloudFront utilizando el bucket S3 como origen.
 
 ### Evidencia
 
-![Evidencia del laboratorio](./img/image1.png)
+![Evidencia del laboratorio](./img/image20.png)
 ---
 
 ## Paso 20: Invalidación de caché automática
