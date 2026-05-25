@@ -107,13 +107,13 @@ git init
 git add .
 git commit -m "feat: inicializa sitio web estatico"
 git branch -M main
-git remote add origin https://github.com/TU_USUARIO/static-site-demo.git
+git remote add origin https://github.com/DiegoSolorzano9/static-site-demo.git
 git push -u origin main
 ```
 
 ### Evidencia
 
-![Evidencia del laboratorio](./img/image1.png)
+![Evidencia del laboratorio](./img/image6.png)
 ---
 
 ## Paso 7: Creación y configuración del bucket S3
@@ -128,7 +128,7 @@ Se creó un bucket S3 habilitando el hosting estático.
 
 ### Evidencia
 
-![Evidencia del laboratorio](./img/image1.png)
+![Evidencia del laboratorio](./img/image7.png)
 ---
 
 ## Paso 8: Configuración de política pública del bucket
@@ -146,7 +146,7 @@ Se configuró la política del bucket para permitir acceso público de lectura.
       "Effect": "Allow",
       "Principal": "*",
       "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::NOMBRE_DE_TU_BUCKET/*"
+      "Resource": "arn:aws:s3:::static-site-demo-lab/*"
     }
   ]
 }
@@ -154,7 +154,8 @@ Se configuró la política del bucket para permitir acceso público de lectura.
 
 ### Evidencia
 
-![Evidencia del laboratorio](./img/image1.png)
+![Evidencia del laboratorio](./img/image8.png)
+
 ---
 
 ## Paso 9: Creación del usuario IAM
@@ -163,7 +164,7 @@ Se creó un usuario IAM para despliegues automáticos desde GitHub Actions.
 
 ### Evidencia
 
-![Evidencia del laboratorio](./img/image1.png)
+![Evidencia del laboratorio](./img/image9.png)
 ---
 
 ## Paso 10: Generación de Access Keys
@@ -172,7 +173,7 @@ Se generaron credenciales de acceso programático para GitHub Actions.
 
 ### Evidencia
 
-![Evidencia del laboratorio](./img/image1.png)
+![Evidencia del laboratorio](./img/image10.png)
 ---
 
 ## Paso 11: Configuración de Secrets y Variables en GitHub
@@ -195,7 +196,9 @@ Se configuraron los secretos y variables necesarios para el workflow.
 
 ### Evidencia
 
-![Evidencia del laboratorio](./img/image1.png)
+![Evidencia del laboratorio](./img/image11.png)
+![Evidencia del laboratorio](./img/image12.png)
+
 ---
 
 ## Paso 12: Creación del workflow GitHub Actions
@@ -238,7 +241,8 @@ jobs:
 
 ### Evidencia
 
-![Evidencia del laboratorio](./img/image1.png)
+![Evidencia del laboratorio](./img/image13.png)
+
 ---
 
 ## Paso 13: Ejecución del pipeline CI/CD
@@ -248,6 +252,7 @@ Se realizó un push al repositorio para ejecutar automáticamente el workflow.
 ### Evidencia
 
 ![Evidencia del laboratorio](./img/image1.png)
+
 ---
 
 ## Paso 14: Verificación del despliegue en S3
