@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: radial-gradient(circle at top right, #1a1c29, #0e1017);
+  color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  padding: 2.5rem;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.description {
+  color: #d1d5db;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.tech-stack span {
+  background: #242938;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  border-radius: 6px;
+  color: #cbd5e1;
+  border: 1px solid #2e354f;
+}
+
+.status-box {
+  background: #11131e;
+  border-radius: 12px;
+  padding: 1.2rem;
+  border: 1px solid #1f2335;
+}
+
+.status-box p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  color: #9ca3af;
+}
+
+#status-text {
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.status-active {
+  color: #34d399;
+}
+
+.status-busy {
+  color: #f87171;
+}
+
+#status-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  width: 100%;
+}
+
+#status-btn:hover {
+  background: #2563eb;
+}
+
+footer {
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: #6b7280;
+}
