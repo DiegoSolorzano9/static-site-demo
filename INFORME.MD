@@ -251,7 +251,7 @@ Se realizó un push al repositorio para ejecutar automáticamente el workflow.
 
 ### Evidencia
 
-![Evidencia del laboratorio](./img/image1.png)
+![Evidencia del laboratorio](./img/image14.png)
 
 ---
 
@@ -261,7 +261,7 @@ Se verificó que los archivos fueron sincronizados correctamente en el bucket.
 
 ### Evidencia
 
-![Evidencia del laboratorio](./img/image1.png)
+![Evidencia del laboratorio](./img/image15.png)
 ---
 
 ## Paso 15: Acceso público al sitio web
@@ -271,12 +271,12 @@ Se accedió al endpoint público del bucket S3.
 ### URL del sitio
 
 ```text
-http://NOMBRE_DE_TU_BUCKET.s3-website-REGION.amazonaws.com
+http://static-site-demo-lab.s3-website-us-east-1.amazonaws.com
 ```
 
 ### Evidencia
 
-![Evidencia del laboratorio](./img/image1.png)
+![Evidencia del laboratorio](./img/image16.png)
 ---
 
 ## Paso 16: Actualización automática del sitio
@@ -285,7 +285,7 @@ Se modificó el contenido del sitio y se realizó un nuevo push para verificar e
 
 ### Evidencia
 
-![Evidencia del laboratorio](./img/image1.png)
+![Evidencia del laboratorio](./img/image17.png)
 ---
 
 ## Paso 17: Simulación de fallo intencional
