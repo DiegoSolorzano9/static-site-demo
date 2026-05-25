@@ -286,6 +286,7 @@ Se modificó el contenido del sitio y se realizó un nuevo push para verificar e
 ### Evidencia
 
 ![Evidencia del laboratorio](./img/image17.png)
+
 ---
 
 ## Paso 17: Simulación de fallo intencional
