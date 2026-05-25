@@ -299,7 +299,7 @@ El workflow falló correctamente y posteriormente se corrigió el error.
 
 ### Evidencia
 
-![Evidencia del laboratorio](./img/image1.png)
+![Evidencia del laboratorio](./img/image18.png)
 ---
 
 ## Paso 18: Corrección del fallo y redeploy exitoso
@@ -308,7 +308,7 @@ Se corrigió el error y se ejecutó nuevamente el workflow exitosamente.
 
 ### Evidencia
 
-![Evidencia del laboratorio](./img/image1.png)
+![Evidencia del laboratorio](./img/image19.png)
 ---
 
 ## Paso 19: Configuración de Amazon CloudFront
